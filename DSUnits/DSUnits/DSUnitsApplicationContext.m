@@ -77,7 +77,7 @@
     [self scanAnnotation];
 }
 
-/// 遍历属性，根据运行时属性的属性得到属性对应的类型存入全局示例对象的sccUnitsAnnotationMapper中
+/// 遍历属性，根据运行时得到的属性对应的类型存入类对应的全局实例对象的dsUnitsAnnotationMapper中
 - (void)scanAnnotation {
     // 对scanClasses中得到的需要IoC容器处理的类进行遍历
     for (NSUInteger i = 0; i < self.DIClasses.count; i++) {
